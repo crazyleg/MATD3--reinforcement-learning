@@ -1,7 +1,7 @@
 [//]: # (Image References)
 
-[image1]: results.png "Trained Agent"
-[image2]: tennis.gif "Soccer"
+[image1]: results.png "Training progess"
+[image2]: tennis.gif "Trained agents"
 
 
 # Project 3: Collaboration and Competition
@@ -15,6 +15,8 @@ To solve the envoromnent is it required to reach mean score of 0.5 in last 100 e
 
 Trained agent looks like this:
 
+![Trained Agent][image2]
+
 # Solution
 
 Just duplicating TD3 algorytmh from another project (link) wasn't enought. Agents didn't not trained or converged to edge cases. Sometimes one agent started to perform nicely, but another wasn't.
@@ -26,11 +28,7 @@ Training progress:
 ![Trained Agent][image1]
 
 
-Trained agent:
-
-![Trained Agent][image2]
-
-# Potential improvals
+# Potential improvments
 
  - Make shared critic 
  - Add BatchNorms to network architectures
@@ -103,3 +101,8 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 2. Place the file in the DRLND GitHub repository, in the `p3_collab-compet/` folder, and unzip (or decompress) the file. 
 
+## Acknowledgements
+
+1. Replay Buffer module was taken from Baseline package from Open AI [https://github.com/openai/baselines]
+2. TD3 is based on Medium explanaition [https://towardsdatascience.com/td3-learning-to-run-with-ai-40dfc512f93]
+3. My previous work for project 2 at Udacity [https://github.com/crazyleg/TD3-reacher]
