@@ -1,7 +1,7 @@
 [//]: # (Image References)
 
 [image1]: results.png "Trained Agent"
-[image2]: tennis.mp4 "Soccer"
+[image2]: tennis.gif "Soccer"
 
 
 # Project 3: Collaboration and Competition
