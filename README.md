@@ -19,9 +19,9 @@ Trained agent looks like this:
 
 # Solution
 
-Just duplicating TD3 algorytmh from another project (link) wasn't enought. Agents didn't not trained or converged to edge cases. Sometimes one agent started to perform nicely, but another wasn't.
+First, I just duplicated typical TD3 algorithm from my previous project [https://github.com/crazyleg/TD3-reacher] and wrapped it in a multiagent class. It didn't work - agents didn't trained or converged to edge cases. Sometimes one agent started to perform nicely, but another wasn't.
 
-So, I spend few days running over hyperparamets. Seems, that final solution was to decrease learning rate to 1e-4 (strange for Adam, huh?) and also running training routine few times after every enovironment step.
+So, I spend few days running over hyperparamets. Final solution was to decrease learning rate to 1e-4 (strange for Adam, huh?) and also running training loop few times after every environment step.
 
 Training progress:
 
@@ -36,12 +36,12 @@ Training progress:
 
 ### Final set of hyperparameters
 
-Learning routines per environment update = 3
-Policy updated per agent train = 2
-Batch Size = 512
-Discount = 0.99
-Replay buffer size = 1e5
-Tau = 5e-3
+ - Learning routines per environment update = 3
+ - Policy updated per agent train = 2
+ - Batch Size = 512
+ - Discount = 0.99
+ - Replay buffer size = 1e5
+ - Tau = 5e-3
 
 ### Networks architectures
 Very small 64 neurons based:
