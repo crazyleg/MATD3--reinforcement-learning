@@ -17,6 +17,11 @@ Trained agent looks like this:
 
 ![Trained Agent][image2]
 
+# Environment
+
+Unity engine provides environment state as 24 float numbers for each for 2 agents (2x24).
+It expects to be provded with an action (2 floats) for each of 2 agents (2x2).
+
 # Solution
 
 First, I just duplicated typical TD3 algorithm from my previous project [https://github.com/crazyleg/TD3-reacher] and wrapped it in a multiagent class. It didn't work - agents didn't trained or converged to edge cases. Sometimes one agent started to perform nicely, but another wasn't.
